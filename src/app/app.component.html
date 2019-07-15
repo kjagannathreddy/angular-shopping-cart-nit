@@ -1,8 +1,8 @@
 <div class="container">
-<h2>Products</h2>
-  <div class="card-deck">
-    <div class="row">
-      <div class="card" *ngFor="let product of products;let i=index;">
+  <h2>Products</h2>
+  <div class="abc">
+    <div class="cards-deck ">
+      <div class="card " *ngFor="let product of products;let i=index;">
         <div class="card-title">
         <h3>{{product.Name}}</h3>
         </div>
@@ -14,6 +14,19 @@
           <br/>
           <input type="button" value="Add to cart" (click)="add_to_cart(i)" />
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="container">
+  <div class="card-columns">
+    <div class="card" *ngFor="let item of carts;let j=index;">
+      <div class="card-body">
+        {{item.Name}}
+        <img [src]="item.Photo" width="100px" height="100px" />
+        {{item.Price}}
+        <input type="button" value="Remove" (click)="remove_cart(j)" />
       </div>
     </div>
   </div>
