@@ -2,7 +2,7 @@
 <h2>Products</h2>
   <div class="card-deck">
     <div class="row">
-      <div class="card" *ngFor="let product of products;let index;">
+      <div class="card" *ngFor="let product of products;let i=index;">
         <div class="card-title">
         <h3>{{product.Name}}</h3>
         </div>
@@ -12,7 +12,7 @@
         <div class="card-footer">
           {{product.Price}}
           <br/>
-          <input type="button" value="Add to cart" (click)="add_to_cart(index)" />
+          <input type="button" value="Add to cart" (click)="add_to_cart(i)" />
         </div>
       </div>
     </div>

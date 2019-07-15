@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  public cart;
+  public carts:any = new Array();
+  public Name;
+  public Price;
+  public Photo;
   public products = [
     {Name:'Tv',Price:'15000',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'},
     {Name:'Mobile',Price:'4000',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'},
@@ -18,5 +21,6 @@ export class AppComponent  {
   ];
   public add_to_cart(index){
     alert(index);
+    this.carts = this.products[index];
   }
 }
