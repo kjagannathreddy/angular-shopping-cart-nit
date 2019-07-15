@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  public carts:any = new Array();
+  public carts:any[]=new Array();
   public Name;
   public Price;
   public Photo;
@@ -21,6 +21,9 @@ export class AppComponent  {
   ];
   public add_to_cart(index){
     alert(index);
-    this.carts = this.products[index];
+    this.carts.push(this.products[index]);
+  }
+  public remove_cart(index){
+    this.carts.splice(index,1);
   }
 }
