@@ -2,12 +2,17 @@
 <h2>Products</h2>
   <div class="card-deck">
     <div class="row">
-      <div class="card" ngFor="let product of products">
+      <div class="card" *ngFor="let product of products;let index;">
         <div class="card-title">
         <h3>{{product.Name}}</h3>
         </div>
         <div class="card-body">
-          
+          <img [src]="product.Photo" width="100" height="100" />
+        </div>
+        <div class="card-footer">
+          {{product.Price}}
+          <br/>
+          <input type="button" value="Add to cart" (click)="add_to_cart(index)" />
         </div>
       </div>
     </div>
