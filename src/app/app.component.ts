@@ -20,7 +20,6 @@ export class AppComponent  {
     {Name:'Killer Jeans',Price:'1500',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'}
   ];
   public add_to_cart(index){
-    alert(index);
     this.carts.push(this.products[index]);
   }
   public remove_cart(index){
