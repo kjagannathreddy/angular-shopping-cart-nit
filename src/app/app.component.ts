@@ -12,7 +12,7 @@ export class AppComponent  {
   public Price;
   public Photo;
   public products = [
-    {Name:'Tv',Price:'15000',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'},
+    {Name:'Tv',Price:'15000',Photo:'https://stackblitz.com/files/angular-shopping-cart-nit/github/kjagannathreddy/angular-shopping-cart-nit/master/award.jpg'},
     {Name:'Mobile',Price:'4000',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'},
     {Name:'Fridge',Price:'14000',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'},
     {Name:'Washing Machine',Price:'18000',Photo:'https://cdn.jsdelivr.net/gh/kjagannathreddy/angular-shopping-cart-nit@master/award.jpg'},
